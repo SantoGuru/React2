@@ -1,6 +1,6 @@
 // app/api/route.ts
-import { NextResponse } from 'next/server';
-import clientPromise from '../../lib/mongodb';
+import { NextResponse } from "next/server";
+import clientPromise from "../../lib/mongodb";
 
 /**
  * Handles POST requests to the API route.
@@ -21,7 +21,7 @@ import clientPromise from '../../lib/mongodb';
 export async function POST(req: Request) {
   const client = await clientPromise;
   const db = client.db("Teste");
-  console.log(req)
+  console.log(req);
   const data = await req.json();
   const result = await db.collection("Teste1").findOne(data);
   return NextResponse.json(result);

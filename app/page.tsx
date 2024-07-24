@@ -1,8 +1,7 @@
 // pages/index.tsx
-import { NextPage } from 'next';
-import Head from 'next/head';
-import Header from '../components/Header/Header';
-
+import { NextPage } from "next";
+import Head from "next/head";
+import Header from "../components/Header/Header";
 
 /**
  * The Home page component.
@@ -25,15 +24,15 @@ const Home: NextPage = () => {
 
       <main className="flex flex-col justify-center flex-1 px-4 pl-10 overflow-hidden">
         <div className="mt-20">
-        <h1 className="text-7xl font-semibold mt-5">The safest</h1>
-        <h1 className="text-7xl font-semibold mt-5">cryptocurrency</h1>
-        <h1 className="text-7xl font-semibold mt-5">trading platform</h1>
+          <h1 className="text-7xl font-semibold mt-5">The safest</h1>
+          <h1 className="text-7xl font-semibold mt-5">cryptocurrency</h1>
+          <h1 className="text-7xl font-semibold mt-5">trading platform</h1>
         </div>
-        <div className='mt-4'>
-        <p className="text-base text-gray-500">
-          Morry is a new platform that provides more than 10,000+
-        </p>
-        <p className="text-base text-gray-500"> markets to buy and sell </p>
+        <div className="mt-4">
+          <p className="text-base text-gray-500">
+            Morry is a new platform that provides more than 10,000+
+          </p>
+          <p className="text-base text-gray-500"> markets to buy and sell </p>
         </div>
         <div className="mt-8 flex w-[25rem] h-[3rem] relative">
           <input
@@ -45,7 +44,7 @@ const Home: NextPage = () => {
             Search
           </button>
         </div>
-              </main>
+      </main>
     </div>
   );
 };
